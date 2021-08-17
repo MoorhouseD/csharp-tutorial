@@ -6,7 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            //----- Ifs -------
+            // ----- Ifs -------
             CadmansIfs();
 
             //-----Loops Below -------
@@ -23,13 +23,16 @@ namespace HelloWorld
             //------ Methods --------
 
             //Add
-            decimal additionTotal = Add(1, 2);
+            decimal additionTotal = Add(number1:1, 2);
 
             //Subtract
+            decimal sutractTotal = Subtract(1,2);
 
             //Multiply
+            decimal multiplyTotal = Multiply(1,2);
 
             //Divide
+            decimal divideTotal = Divide(1,2);
 
             //Percent (Homework, complete the method to return a percentage of the orignal input)
             decimal newTotal = Percentage(originalAmount: 100.00m, percentage: 10);
@@ -41,6 +44,21 @@ namespace HelloWorld
         static decimal Add(decimal number1, decimal number2)
         {
             return number1 + number2;
+        }
+
+        static decimal Subtract(decimal number1, decimal number2)
+        {
+            return number1 - number2;
+        }
+
+        static decimal Multiply(decimal number1, decimal number2)
+        {
+            return number1 * number2;
+        }
+
+        static decimal Divide(decimal number1, decimal number2)
+        {
+            return number1 / number2;
         }
 
         static void CadmansIfs()
