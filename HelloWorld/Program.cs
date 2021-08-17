@@ -23,6 +23,7 @@ namespace HelloWorld
             //------ Methods --------
 
             //Add
+            decimal additionTotal = Add(1, 2);
 
             //Subtract
 
@@ -34,6 +35,12 @@ namespace HelloWorld
             decimal newTotal = Percentage(originalAmount: 100.00m, percentage: 10);
 
             //Modulus (% is the mod operator)
+        }
+
+
+        static decimal Add(decimal number1, decimal number2)
+        {
+            return number1 + number2;
         }
 
         static void CadmansIfs()
