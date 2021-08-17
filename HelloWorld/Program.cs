@@ -14,11 +14,11 @@ namespace HelloWorld
 
 
             //If, if else, else statement
-            if(c == 'a')
+            if (c == 'a')
             {
                 Console.WriteLine("a");
             }
-            else if(c == 'b')
+            else if (c == 'b')
             {
                 Console.WriteLine('b');
             }
@@ -29,7 +29,7 @@ namespace HelloWorld
 
             // //Loops
             int count = 0;
-            while(count < 10)
+            while (count < 10)
             {
                 Console.WriteLine(count);
                 count = count + 1;
@@ -53,7 +53,7 @@ namespace HelloWorld
                 cadmansMoney = cadmansMoney - itemPrice;
                 Console.WriteLine(cadmansMoney);
             }
-            while(cadmansMoney > 99);
+            while (cadmansMoney > 99);
             Console.WriteLine(cadmansMoney);
         }
 
