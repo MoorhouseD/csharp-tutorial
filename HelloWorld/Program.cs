@@ -20,7 +20,7 @@ namespace HelloWorld
             // For loop
             CadmansMoneyShots();
 
-            //Methods 
+            //------ Methods --------
 
             //Add
 
