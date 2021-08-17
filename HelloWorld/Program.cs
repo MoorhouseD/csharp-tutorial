@@ -6,6 +6,38 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            //----- Ifs -------
+            CadmansIfs();
+
+            //-----Loops Below -------
+
+            //While loop
+            CadmansWhile();
+
+            // Do While loop
+            CadmansMoneyCountdown();
+
+            // For loop
+            CadmansMoneyShots();
+
+            //Methods 
+
+            //Add
+
+            //Subtract
+
+            //Multiply
+
+            //Divide
+
+            //Percent (Homework, complete the method to return a percentage of the orignal input)
+            decimal newTotal = Percentage(originalAmount: 100.00m, percentage: 10);
+
+            //Modulus (% is the mod operator)
+        }
+
+        static void CadmansIfs()
+        {
             var c = 'b';
             string a = "abc09090";
             int b = 0;
@@ -26,20 +58,16 @@ namespace HelloWorld
             {
                 Console.WriteLine("Not a");
             }
+        }
 
-            // //Loops
+        static void CadmansWhile()
+        {
             int count = 0;
             while (count < 10)
             {
                 Console.WriteLine(count);
                 count = count + 1;
             }
-
-            // Do While loop
-            CadmansMoneyCountdown();
-
-            // For
-            CadmansMoneyShots();
         }
 
         static void CadmansMoneyCountdown()
@@ -67,5 +95,11 @@ namespace HelloWorld
                 moneyShots = moneyShots + i;
             }
         }
+
+        static decimal Percentage(decimal originalAmount = 0, int percentage = 0)
+        {
+            return 0;
+        }
+
     }
 }
