@@ -7,58 +7,36 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             // ----- Ifs -------
-            CadmansIfs();
+            //CadmansIfs();
 
             //-----Loops Below -------
 
             //While loop
-            CadmansWhile();
+            //CadmansWhile();
 
             // Do While loop
-            CadmansMoneyCountdown();
+            //CadmansMoneyCountdown();
 
             // For loop
-            CadmansMoneyShots();
+            //CadmansMoneyShots();
 
-            //------ Methods --------
+            // ------- Classes & Methods ------- //
 
-            //Add
-            decimal additionTotal = Add(number1:1, 2);
+            //Calculator 
 
-            //Subtract
-            decimal sutractTotal = Subtract(1,2);
+            Calculator calc = new Calculator();
 
-            //Multiply
-            decimal multiplyTotal = Multiply(1,2);
-
-            //Divide
-            decimal divideTotal = Divide(1,2);
-
-            //Percent (Homework, complete the method to return a percentage of the orignal input)
-            decimal newTotal = Percentage(originalAmount: 100.00m, percentage: 10);
-
-            //Modulus (% is the mod operator)
-        }
+            decimal additionTotal = calc.Add(1, 2);
+            decimal sutractTotal = calc.Subtract(1, 2);
+            decimal multiplyTotal = calc.Multiply(1, 2);
+            decimal divideTotal = calc.Divide(1, 2);
+            decimal percentageTotal = calc.Percentage(100.00m, 10);
+            int remainder = calc.Remainder(8, 3);
 
 
-        static decimal Add(decimal number1, decimal number2)
-        {
-            return number1 + number2;
-        }
+            // The Bird & The Penguin
 
-        static decimal Subtract(decimal number1, decimal number2)
-        {
-            return number1 - number2;
-        }
 
-        static decimal Multiply(decimal number1, decimal number2)
-        {
-            return number1 * number2;
-        }
-
-        static decimal Divide(decimal number1, decimal number2)
-        {
-            return number1 / number2;
         }
 
         static void CadmansIfs()
@@ -68,7 +46,6 @@ namespace HelloWorld
             int b = 0;
             decimal d = 0.0m;
             bool e = false;
-
 
             //If, if else, else statement
             if (c == 'a')
