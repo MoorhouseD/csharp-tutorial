@@ -24,18 +24,31 @@ namespace HelloWorld
 
             //Calculator 
 
-            Calculator calc = new Calculator();
+            // Calculator calc = new Calculator();
 
-            decimal additionTotal = calc.Add(1, 2);
-            decimal sutractTotal = calc.Subtract(1, 2);
-            decimal multiplyTotal = calc.Multiply(1, 2);
-            decimal divideTotal = calc.Divide(1, 2);
-            decimal percentageTotal = calc.Percentage(100.00m, 10);
-            int remainder = calc.Remainder(8, 3);
+            // decimal additionTotal = calc.Add(1, 2);
+            // decimal sutractTotal = calc.Subtract(1, 2);
+            // decimal multiplyTotal = calc.Multiply(1, 2);
+            // decimal divideTotal = calc.Divide(1, 2);
+            // decimal percentageTotal = calc.Percentage(100.00m, 10);
+            // int remainder = calc.Remainder(8, 3);
 
 
             // The Bird & The Penguin
 
+
+
+            //The Ball
+            Ball[] ballsArray = new Ball[10];
+
+            for (int position = 0; position < 10; position++)
+            {
+                Ball ball = new Ball();
+                ball.Color = $"red-{position}";
+                ball.Size = 2 * position;
+
+                ballsArray[position] = ball;
+            }
 
         }
 
