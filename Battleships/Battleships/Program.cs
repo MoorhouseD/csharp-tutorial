@@ -1,11 +1,12 @@
 ﻿using System;
+using Battleships.Models;
 
 namespace Battleships
 {
     class Program
     {
-        const int GRID_SIZE = 8;
-        public static int[,] Grid { get; set; }
+        static Player Player1 { get; set; }
+        static Player Computer { get; set; }
 
         static void Main(string[] args)
         {
@@ -24,8 +25,9 @@ namespace Battleships
 
         static void Setup()
         {
-            //Create grid
-            Grid = new int[GRID_SIZE, GRID_SIZE];
+            //Create players
+            Player1 = new Player();
+            Computer = new Player();
 
             //Create ships
             //Player 1 places 5 ships

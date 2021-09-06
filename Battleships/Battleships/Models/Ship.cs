@@ -8,6 +8,6 @@ namespace Battleships.Models
         //Width
         //Number of hits taken
         //Ship type
-        //Is Sunk?
+        //Has Sunk?
     }
 }

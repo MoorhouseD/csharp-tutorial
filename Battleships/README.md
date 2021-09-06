@@ -25,4 +25,5 @@ This should cover:
 
 - The abstract class - `Ship`
 - Defining ships with inheritance
-- Identifting ships with an Enum - `ShipType`
+- Identifting tiles with an Enum - `TileType`
+- Cover changes between the Grid from Lesson1 to Lesson 2
