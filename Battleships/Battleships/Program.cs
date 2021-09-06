@@ -4,14 +4,16 @@ namespace Battleships
 {
     class Program
     {
-        static int[,] Grid;
+        const int GRID_SIZE = 8;
+        public static int[,] Grid { get; set; }
+
         static void Main(string[] args)
         {
             bool gameEnded = false;
 
             Setup();
 
-            //Game loop beggins 
+            //Game loop begins 
             while (!gameEnded)
             {
                 gameEnded = true;
@@ -23,7 +25,7 @@ namespace Battleships
         static void Setup()
         {
             //Create grid
-            Grid = new int[8, 8];
+            Grid = new int[GRID_SIZE, GRID_SIZE];
 
             //Create ships
             //Player 1 places 5 ships
